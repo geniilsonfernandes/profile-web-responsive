@@ -280,4 +280,10 @@ body {
 		justify-content: center;
 		margin-top: 30px;
 	}
+	.profile__section {
+		padding-top: 0;
+	}
+	.profile__cover__photo{
+		border-radius: 0px 0px 30px 30px;
+	} 
 }
