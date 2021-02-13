@@ -52,10 +52,11 @@ const documentContent = {
         followersNumber.innerHTML = user.followers;
     },
     seemore(){
-        textH = document.querySelector('.info__about p').clientHeight
+        textp = document.querySelector('.info__about p').textContent.length
         letter = user.about.length;
-        if(textH==60){
-            aboutText.innerHTML = `${user.about.substring(0,letter)}... <span class="seeMore" onclick="documentContent.seemore()">Ver menos</span>`;
+        console.log(textp,letter);
+        if(textp<letter){
+            aboutText.innerHTML = `${user.about.substring(0,letter)} <span class="seeMore" onclick="documentContent.seemore()">Ver menos</span>`;
         }else{
             aboutText.innerHTML = `${user.about.substring(0,125)}... <span class="seeMore" onclick="documentContent.seemore()">ler mais</span>`; 
         }

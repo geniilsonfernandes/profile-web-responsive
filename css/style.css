@@ -298,12 +298,18 @@ body {
 		cursor: pointer;
 		position: relative;
 		transform: translateY(0px);
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 	}
 	.user__folowers{
-		position: absolute;
-		left: -60%;
-		top: 80px;
+    	flex-direction: row;
+    	border: 1px solid red;
+    	width: 121px;
+    	justify-content: space-between;
+    	align-items: center;
+	}
+	.user__folowers span {
+		margin-bottom: 0;
+		
 	}
 	.user__info{
 		margin: 0 3%;	
