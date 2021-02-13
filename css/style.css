@@ -20,12 +20,12 @@ body {
     padding: 0 3% 0 3%;
 }
 .mwfix {
-    max-width: 1200px;
+    max-width: 1336px;
     margin: 0 auto;
 }
 @media screen and (max-width: 1440px){
 	.mwfix {
-        max-width: 1088px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 }
@@ -67,12 +67,12 @@ body {
 .profile__user__info{
 	flex: 0 0 60%; 
 	display: flex;
-	padding: 0 50px;
+	padding-left:5%;
 	
 }
 .profile__user__cards{
 	flex: 0 0 40%;
-	padding: 0 50px;
+	padding-right: 5%;
 }
 .user__photo{
 	position: relative;
@@ -84,7 +84,7 @@ body {
 	box-shadow: 6px 11px 20px -3px rgba(131, 139, 153, 0.37);
 }
 .user__folowers{
-	margin: 10px auto 0 auto;
+	margin: 25px auto 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -92,13 +92,13 @@ body {
 }
 .user__folowers span{
 	margin-bottom: 5px;
-	width: 45px;
+	width: 55px;
 	display: flex;
 	justify-content: space-between;
 }
 .user__folowers span h3{
-	font-size: 0.875rem;
-	color: #5C626A;
+	font-size: 1.2rem;
+	color: #3996F8;
 	font-weight: 600;
 }
 .user__folowers  h3{
@@ -107,8 +107,8 @@ body {
 	font-weight: 400;
 }
 .user__info{
-	margin-top: 13px;
-	margin-left: 35px;
+	margin-top: 28px;
+	margin-left: 50px;
 }
 .info__description{
 	display: flex;
@@ -122,32 +122,36 @@ body {
 }
 .info__name h2 span {
 	position: absolute;
-	left:  -20px;
-	top: -10px;
+	right: -30px;
 }
 
 .info__description{
+	margin-top: 5px;
 	display: flex;
+	max-width: 350px;
 	justify-content: space-between;
-	width: 280px;
-	max-width: 280px;
+
 }
 .info__office h3,
 .info__place h3{
-
+	margin-left: 15px;
 	font-size: 0.875rem;
 	color: #5C626A;
 	font-weight: 500;
 }
+.info__office img{
+	height: 21px;
+}
+.info__office,
 .info__place{
 	display: flex;
-	justify-content: space-between;
-	width: 170px;
-	max-width: 170px;
+	justify-content: flex-start;
+	
 }
+
 .info__about{
-	margin-top: 7px;
-	margin-bottom: 20px;
+	margin-top: 25px;
+	margin-bottom: 40px;
 }
 .info__about p{
 	font-size: 0.75rem;
@@ -158,6 +162,7 @@ body {
 	font-size: 0.875rem;
 	color: #5C626A;
 	font-weight: 400;
+	line-height: 1.8rem;
 	transition: all cubic-bezier(.77, 0, .34, .99) 200ms;
 }
 .info__about span {
@@ -191,7 +196,7 @@ body {
 	text-decoration: none;
 	color: white;
 	font-size: 0.875rem;
-	font-weight: 400;
+	font-weight: 500;
 	position: relative;
 	left:inherit;
 	top:inherit;
@@ -201,12 +206,12 @@ body {
 	background: #2c71ba;;
 }
 .mensage__btn {
-	width: 150px;
+	width: 140px;
 	background:#E7ECEE;
 	text-decoration: none;
 	color: #5C626A;
 	font-size: 0.875rem;
-	font-weight: 400;
+	font-weight: 600;
 	transition: all cubic-bezier(.77, 0, .34, .99) 200ms;
 }
 .mensage__btn:hover{
@@ -233,10 +238,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 50px;
+	width: 100px;
 }
 .cards:nth-child(2){
-	margin: 0 30px;
+	margin: 0 40px;
 }
 .cards img {
 	margin-bottom: 15px;
@@ -249,6 +254,9 @@ body {
 }
 .cards h3 span{
 	display: block;
+	font-size: 0.875rem;
+	color: #1C1E21;
+	font-weight: 600;
 	margin-bottom: 5px;
 }
 
@@ -264,16 +272,16 @@ body {
 	}
 	.profile__user__cards {
 		flex: 0 0 90%;
-		padding: 0 50px;
+		padding:0 5%;
 	}
 	.user__cards {
 		display: flex;
 		flex-flow: wrap;
-		justify-content: center;
+		justify-content: space-around;
 		margin-top: 30px;
 	}
 	.cards:nth-child(2) {
-		margin: 0 10%;
+		margin: 0 ;
 	}
 	.cards{
 		width: auto;
@@ -284,27 +292,25 @@ body {
 
 @media screen and (max-width: 746px){
 	
-	.profile__user{
-		transform: translateY(-15%);
-	}
+	
 	.profile__user__info{
 		flex: 0 0 100%; 
 		display: flex;
 		flex-flow: wrap;
 		padding: 0 5%;
 		justify-content: center;
+		margin-top: -75px;
 	}
 	.user__photo {
 		cursor: pointer;
 		position: relative;
 		transform: translateY(0px);
-		margin-bottom: 15px;
 	}
 	.user__folowers{
-    	background: #efefef;
+    	background: none;
     	padding: 10px 15px;
     	flex-direction: row;
-    /* border: 1px solid red; */
+		margin: 10px auto 10px auto;
     	width: 148px;
     	justify-content: space-between;
     	align-items: center;
@@ -314,11 +320,18 @@ body {
 		margin-bottom: 0;
 		
 	}
+	.user__folowers span img {
+		display: none;
+	}
+	
 	.user__info{
-		margin: 0 3%;	
+		margin: 0 3%;
+		
 	}
 	.info__about{
-		width: 95%;
+		width: 100%;
+		margin-top: 25px;
+    	margin-bottom: 30px;
 	}
 	.contact__btn{
 		margin-right: 10px;
@@ -326,11 +339,13 @@ body {
 	.profile__user__cards {
 		flex: 0 0 100%;
 		padding: 0 0;
+		margin-top: 35px;
+		
 	}
 	.user__cards {
 		display: flex;
 		flex-flow: wrap;
-		justify-content: center;
+		justify-content: space-around;
 		margin-top: 30px;
 	}
 	.profile__section {

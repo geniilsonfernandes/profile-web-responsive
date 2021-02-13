@@ -4,7 +4,7 @@ let user = {
     nome: 'Thomas Reyes',
     ocupation: 'UI/UX - Front end',
     location: 'Rio de Janeiro',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    about: 'Meticulous web developer with over 2 years of front end experience and passion for responsive website design and a firm believer in the mobile-first approach. W3C certified. Implemented new responsive website approach which increased mobile traffic by 20.',
     rating: 4.5,
     jobs: 450,
     hoursWorked: '13,5k',
@@ -37,16 +37,11 @@ let newFollow = 0;
         newFollow = 0 
     };
 });
-
-
-
-
-
 // functions
 const documentContent = {
     insertContent(){
         followersNumber.innerHTML = user.followers;
-        aboutText.innerHTML = `${user.about.substring(0,125)}... <span class="seeMore" onclick="documentContent.seemore()">ler mais</span>`; 
+        aboutText.innerHTML = `${user.about.substring(0,175)}... <span class="seeMore" onclick="documentContent.seemore()">ler mais</span>`; 
     },
     addRemoveflows(){
         followersNumber.innerHTML = user.followers;
@@ -58,14 +53,11 @@ const documentContent = {
         if(textp<letter){
             aboutText.innerHTML = `${user.about.substring(0,letter)} <span class="seeMore" onclick="documentContent.seemore()">Ver menos</span>`;
         }else{
-            aboutText.innerHTML = `${user.about.substring(0,125)}... <span class="seeMore" onclick="documentContent.seemore()">ler mais</span>`; 
+            aboutText.innerHTML = `${user.about.substring(0,175)}... <span class="seeMore" onclick="documentContent.seemore()">ler mais</span>`; 
         }
 
     }
 }
-
-
-//
 
 //laod
 window.addEventListener('load', ()=>{
