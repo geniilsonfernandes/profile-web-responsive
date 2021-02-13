@@ -75,15 +75,37 @@ body {
 	padding: 0 50px;
 }
 .user__photo{
-	cursor: pointer;
 	position: relative;
 	transform: translateY(-60px)
 }
-.user__photo img{
+.user__photo > img{
+	cursor: pointer;
 	border-radius: 50%;
 	box-shadow: 6px 11px 20px -3px rgba(131, 139, 153, 0.37);
 }
-
+.user__folowers{
+	margin: 10px auto 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80px;
+}
+.user__folowers span{
+	margin-bottom: 5px;
+	width: 45px;
+	display: flex;
+	justify-content: space-between;
+}
+.user__folowers span h3{
+	font-size: 0.875rem;
+	color: #5C626A;
+	font-weight: 600;
+}
+.user__folowers  h3{
+	font-size: 0.875rem;
+	color: #5C626A;
+	font-weight: 400;
+}
 .user__info{
 	margin-top: 13px;
 	margin-left: 35px;
@@ -132,10 +154,11 @@ body {
 	color: #5C626A;
 }
 .info__about p {
+	
 	font-size: 0.875rem;
 	color: #5C626A;
 	font-weight: 400;
-	
+	transition: all cubic-bezier(.77, 0, .34, .99) 200ms;
 }
 .info__about span {
 	cursor: pointer;
@@ -152,14 +175,15 @@ body {
 }
 .contact__btn,
 .mensage__btn{
+	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 20px;
 	height: 45px;
 	border-radius: 25px;
-	
 }
+
 .contact__btn {
 	width: 120px;
 	margin-right: 20px;
@@ -183,10 +207,21 @@ body {
 	color: #5C626A;
 	font-size: 0.875rem;
 	font-weight: 400;
-	transition: background cubic-bezier(.77, 0, .34, .99) 200ms;
+	transition: all cubic-bezier(.77, 0, .34, .99) 200ms;
 }
 .mensage__btn:hover{
 	background: #d2dadd;
+}
+
+.folowed {
+	display: flex;
+	justify-content:center;
+	background: #e5e7e7;
+    color: #5C626A;
+}
+.folowed:hover{
+	background: #c9cdcf;
+    color: #5C626A;
 }
 
 .user__cards{
@@ -198,6 +233,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 50px;
 }
 .cards:nth-child(2){
 	margin: 0 30px;
@@ -239,6 +275,9 @@ body {
 	.cards:nth-child(2) {
 		margin: 0 10%;
 	}
+	.cards{
+		width: auto;
+	}
 }
 
 /* mobile */
@@ -260,6 +299,11 @@ body {
 		position: relative;
 		transform: translateY(0px);
 		margin-bottom: 30px;
+	}
+	.user__folowers{
+		position: absolute;
+		left: -60%;
+		top: 80px;
 	}
 	.user__info{
 		margin: 0 3%;	
@@ -284,6 +328,10 @@ body {
 		padding-top: 0;
 	}
 	.profile__cover__photo{
+		height: 300px;
 		border-radius: 0px 0px 30px 30px;
-	} 
+	}
+	.cards{
+		width: auto;
+	}
 }
