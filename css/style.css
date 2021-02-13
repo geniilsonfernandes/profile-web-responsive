@@ -75,13 +75,14 @@ body {
 	padding-right: 5%;
 }
 .user__photo{
+	
 	position: relative;
 	transform: translateY(-60px)
 }
 .user__photo > img{
+	border: 7px solid #f7f8f8;
 	cursor: pointer;
 	border-radius: 50%;
-	box-shadow: 6px 11px 20px -3px rgba(131, 139, 153, 0.37);
 }
 .user__folowers{
 	margin: 25px auto 0 auto;
@@ -278,7 +279,7 @@ body {
 		display: flex;
 		flex-flow: wrap;
 		justify-content: space-around;
-		margin-top: 30px;
+		margin-top: 40px;
 	}
 	.cards:nth-child(2) {
 		margin: 0 ;
@@ -333,13 +334,14 @@ body {
 		margin-top: 25px;
     	margin-bottom: 30px;
 	}
-	.contact__btn{
-		margin-right: 10px;
+	.info__office h3, .info__place h3 {
+		margin-left: 5px;
+		
 	}
 	.profile__user__cards {
 		flex: 0 0 100%;
 		padding: 0 0;
-		margin-top: 35px;
+		margin-top: 16px;
 		
 	}
 	.user__cards {
